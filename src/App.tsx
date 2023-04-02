@@ -4,6 +4,7 @@ import "./App.css"
 import About from "./pages/About"
 import Home from "./pages/Main"
 import NotFound from "./pages/NotFound"
+import Form from "./pages/Form"
 
 export function ClearApp() {
     // const [count, setCount] = useState(0)
@@ -12,6 +13,7 @@ export function ClearApp() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/form" element={<Form />} />
             <Route path="*" element={<NotFound />} />
         </Routes>
     )
